@@ -18,8 +18,7 @@
 
 - 사용한 데이터셋 및 이미지 전처리 방법
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a5c5877-7f0e-4918-8e57-796c31f2e001/4d2fddf5-dfbe-495c-a543-f537892e23de/Untitled.png)
-    
+
     - 데이터셋 : Kaggle - Severstal: Steel Defect Detection
         - 1600 x 256 사이즈의 이미지로 구성
         - 4가지 종류의 결함
@@ -30,22 +29,18 @@
 
 - 활용 모델 및 Class 별 Confusion Matrix
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a5c5877-7f0e-4918-8e57-796c31f2e001/4ad31111-bc71-4853-ba63-91333fa45410/Untitled.png)
     
     - Base 모델 : Xception
         - 선행 연구에서 Xception과 ResNet50을 활용한 연구가 우수한 성능 지표를 나타냄
         - 이중 Xception이 레이어 수정이 쉽고 간편해 선정
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a5c5877-7f0e-4918-8e57-796c31f2e001/9f0d2149-dec9-48b3-8c09-e9aaa6a49c4b/Untitled.png)
-    
+   
     - Confusion Matrix
         - 성능 지표는 f1-score
         - 기존 데이터셋의 4가지 결함과(Class 1 ~ 4) 결함 없음(Class 0)으로 총 5개의 클래스로 학습 진행
         - Xception을 Base Model로 튜닝해 학습한 모델에 적용한 f1-score는 좌측의 그림과 같음
 
 # 결과 프로그램
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a5c5877-7f0e-4918-8e57-796c31f2e001/bcad1913-0176-4f20-bd3a-f788847bbafc/Untitled.png)
 
 - Pyqt5를 이용해 프로그램 설계
 - 파일 불러오기를 통해 이미지를 전체적으로 불러옴
